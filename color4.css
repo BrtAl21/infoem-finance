@@ -1,0 +1,33 @@
+body
+{
+	background: darkviolet;
+}
+.head
+{
+	text-decoration: underline;
+	color: gold;
+}
+.but{
+	background: black;
+	color: gold;
+	width: 20%;
+	padding: 10px;
+	border: 3px solid crimson;
+	border-radius: 45px;
+
+}
+table
+{
+	background: lightcoral;
+	width: 27%;
+	border: 1px solid crimson;
+}
+h4 > a{
+	background: black;
+	color: gold;
+	width: 6.5%;
+	padding: 7px;
+	border: 3px solid crimson;
+	border-radius: 45px;
+	text-decoration: none;
+}

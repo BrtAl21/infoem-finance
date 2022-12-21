@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.c1{
+			background: aqua;
+			width: 40%;
+			height: 300px;
+			border: 3px solid crimson;
+		}
+		.button{
+			background: black;
+			color: gold;
+			width: 40%;
+			padding: 7px;
+			border: 3px solid crimson;
+			border-radius: 45px;
+		}
+		#x{
+			width: 20%;
+		}
+		h4 > a{
+			background: black;
+			color: gold;
+			width: 20%;
+			padding: 7px;
+			border: 3px solid crimson;
+			border-radius: 45px;
+			text-decoration: none;
+		}
+	</style>
+	<script type="text/javascript">
+		function fun()
+		{
+			var a=document.getElementById("x").value;
+			a=+a;
+
+			if(a)
+			{
+				alert("Your age is "+(2022-a));
+			}
+			else
+			{
+				alert("Data has been invalid");
+			}
+		}
+	</script>
+</head>
+<body bgcolor="blue">
+	<br><br><br><br><br><br><br><br><br>
+	<center>
+		<div class="c1"><br>
+			<h1><font face="Informal Roman">Age Calculator</font></h1><br>
+			<font size="5px" color="red" face="Brush Script MT">Enter Year:</font> 
+			<input type="text" name="" id="x"><br><br>
+			<input type="button" name="" value="Calculate" onclick="fun()" class="button">
+			<h4><a href="index.html">Go to Home</a></h4>
+		</div>
+	</center>
+
+</body>
+</html>

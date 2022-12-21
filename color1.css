@@ -1,0 +1,18 @@
+body{
+	background: aqua;
+}
+td{
+	font-size: 27px;
+	font-family: "Informal Roman";
+}
+.table{
+	background: slategray;
+	border: 2px solid crimson;
+	width: 40%;
+}
+a{
+	color: gold;
+}
+a:hover{
+	color: lime;
+}

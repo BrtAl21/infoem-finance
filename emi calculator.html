@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="color2.css">
+	<script type="text/javascript">
+		function fun()
+		{
+			var name=document.getElementById("name").value;
+			var a=document.getElementById("la").value;
+			var b=document.getElementById("sm").value;
+			a=+a;
+			b=+b;
+
+				var int1=a*0.18;
+				var rp1=a+int1;
+				var c1=rp1/b;
+
+				var int2=a*0.14;
+				var rp2=a+int2;
+				var c2=rp2/b;
+
+				var int3=a*0.15;
+				var rp3=a+int3;
+				var c3=rp3/b;
+
+				var int4=a*0.16;
+				var rp4=a+int4;
+				var c4=rp4/b;
+
+				var int5=a*0.03;
+				var rp5=a+int5;
+				var c5=rp5/b;
+
+				var int6=a*0.21;
+				var rp6=a+int6;
+				var c6=rp6/b;
+
+				var int7=a*0.22;
+				var rp7=a+int7;
+				var c7=rp7/b;
+
+				var int8=a*0.06;
+				var rp8=a+int8;
+				var c8=rp8/b;
+
+				var int9=a*0.13;
+				var rp9=a+int9;
+				var c9=rp9/b;
+
+				document.getElementById("a").innerHTML=c1.toFixed(2);
+				document.getElementById("b").innerHTML=c2.toFixed(2);
+				document.getElementById("c").innerHTML=c3.toFixed(2);
+				document.getElementById("d").innerHTML=c4.toFixed(2);
+				document.getElementById("e").innerHTML=c5.toFixed(2);
+				document.getElementById("f").innerHTML=c6.toFixed(2);
+				document.getElementById("g").innerHTML=c7.toFixed(2);
+				document.getElementById("h").innerHTML=c8.toFixed(2);
+				document.getElementById("i").innerHTML=c9.toFixed(2);
+		}
+		function fun1()
+		{
+			    document.getElementById("a").innerHTML="";
+				document.getElementById("b").innerHTML="";
+				document.getElementById("c").innerHTML="";
+				document.getElementById("d").innerHTML="";
+				document.getElementById("e").innerHTML="";
+				document.getElementById("f").innerHTML="";
+				document.getElementById("g").innerHTML="";
+				document.getElementById("h").innerHTML="";
+				document.getElementById("i").innerHTML="";
+
+		}
+	</script>
+</head>
+<body>
+	<center>
+		<form>
+		<h1 class="head"><font face="Informal Roman">EMI Calculator</font></h1><br>
+		<font size="6px" color="blue" face="Freestyle Script">Enter Name: </font>
+		<input type="text" name="" id="name"><br><br>
+		<font size="6px" color="blue" face="Freestyle Script">Loan Amount: </font>
+		<input type="text" name="" id="la"><br><br>
+		<font size="6px" color="blue" face="Freestyle Script">Enter Month: </font>
+		<select id="sm">
+			<option value="">--select month--</option>
+			<option value="12">12</option>
+			<option value="24">24</option>
+			<option value="36">36</option>
+		</select><br><br>
+		<input type="button" name="" value="submit" onclick="fun()" class="but">
+		<input type="reset" name="" value="cancel" onclick="fun1()" class="but">
+		</form><br><br><br>
+
+		<table border="1" cellspacing="0" cellpadding="10" class="table">
+			<tr>
+				<td><center>Bank</center></td>
+				<td><center>Personal Loan</center></td>
+				<td><center>Bussiness Loan</center></td>
+				<td><center>Home Loan</center></td>
+			</tr>
+			<tr>
+				<td><center id="a1">HDFC</center></td>
+				<td><center id="a"></center></td>
+				<td><center id="b"></center></td>
+				<td><center id="c"></center></td>
+			</tr>
+			<tr>
+				<td><center id="d1">ICICI</center></td>
+				<td><center id="d"></center></td>
+				<td><center id="e"></center></td>
+				<td><center id="f"></center></td>
+			</tr>
+			<tr>
+				<td><center id="g1">AXIS</center></td>
+				<td><center id="g"></center></td>
+				<td><center id="h"></center></td>
+				<td><center id="i"></center></td>
+			</tr>
+		</table>
+		<br>
+		<h4><a href="index.html">Go to Home</a></h4>
+	</center>
+
+</body>
+</html>

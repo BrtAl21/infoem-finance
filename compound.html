@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="color3.css">
+	<script type="text/javascript">
+		function fun()
+		{
+			let amt=document.getElementById("amt").value;
+			let sel=document.getElementById("so").value;
+			amt=+amt;
+			sel=+sel;
+
+			let x1=amt*sel;
+			let y1=amt+x1;
+
+			let x2=(amt+y1)*sel;
+			let y2=amt+y1+x2;
+
+			let x3=(amt+y2)*sel;
+			let y3=amt+y2+x3;
+
+			let x4=(amt+y3)*sel;
+			let y4=amt+y3+x4;
+
+			let x5=(amt+y4)*sel;
+			let y5=amt+y4+x5;
+
+			let x6=(amt+y5)*sel;
+			let y6=amt+y5+x6;
+
+			let x7=(amt+y6)*sel;
+			let y7=amt+y6+x7;
+
+			let x8=(amt+y7)*sel;
+			let y8=amt+y7+x8;
+
+			let x9=(amt+y8)*sel;
+			let y9=amt+y8+x9;
+
+			let x10=(amt+y9)*sel;
+			let y10=amt+y9+x10;
+
+			let z=y1+y2+y3+y4+y5+y6+y7+y8+y9+y10;
+			let a=amt*10;
+			let b=x1+x2+x3+x4+x5+x6+x7+x8+x9+x10;
+			let c=z-a;
+
+			document.getElementById("a1").innerHTML=amt.toFixed(2);
+			document.getElementById("a2").innerHTML=x1.toFixed(2);
+			document.getElementById("a3").innerHTML=y1.toFixed(2);
+
+			document.getElementById("b1").innerHTML=amt.toFixed(2);
+			document.getElementById("b2").innerHTML=x2.toFixed(2);
+			document.getElementById("b3").innerHTML=y2.toFixed(2);
+
+			document.getElementById("c1").innerHTML=amt.toFixed(2);
+			document.getElementById("c2").innerHTML=x3.toFixed(2);
+			document.getElementById("c3").innerHTML=y3.toFixed(2);
+
+			document.getElementById("d1").innerHTML=amt.toFixed(2);
+			document.getElementById("d2").innerHTML=x4.toFixed(2);
+			document.getElementById("d3").innerHTML=y4.toFixed(2);
+
+			document.getElementById("e1").innerHTML=amt.toFixed(2);
+			document.getElementById("e2").innerHTML=x5.toFixed(2);
+			document.getElementById("e3").innerHTML=y5.toFixed(2);
+
+			document.getElementById("f1").innerHTML=amt.toFixed(2);
+			document.getElementById("f2").innerHTML=x6.toFixed(2);
+			document.getElementById("f3").innerHTML=y6.toFixed(2);
+
+			document.getElementById("g1").innerHTML=amt.toFixed(2);
+			document.getElementById("g2").innerHTML=x7.toFixed(2);
+			document.getElementById("g3").innerHTML=y7.toFixed(2);
+
+			document.getElementById("h1").innerHTML=amt.toFixed(2);
+			document.getElementById("h2").innerHTML=x8.toFixed(2);
+			document.getElementById("h3").innerHTML=y8.toFixed(2);
+
+			document.getElementById("i1").innerHTML=amt.toFixed(2);
+			document.getElementById("i2").innerHTML=x9.toFixed(2);
+			document.getElementById("i3").innerHTML=y9.toFixed(2);
+
+			document.getElementById("j1").innerHTML=amt.toFixed(2);
+			document.getElementById("j2").innerHTML=x10.toFixed(2);
+			document.getElementById("j3").innerHTML=y10.toFixed(2);
+
+			document.getElementById("ta").innerHTML=z.toFixed(2);
+			document.getElementById("ins").innerHTML="Investment Amount: "+a.toFixed(2);
+			document.getElementById("int").innerHTML="Interest Amount: "+b.toFixed(2);
+			document.getElementById("np").innerHTML="Net Pay: "+z.toFixed(2);
+			document.getElementById("tp").innerHTML="Total Profit: "+c.toFixed(2);
+		}
+		function fun2()
+		{
+			document.getElementById("a1").innerHTML="";
+			document.getElementById("a2").innerHTML="";
+			document.getElementById("a3").innerHTML="";
+
+			document.getElementById("b1").innerHTML="";
+			document.getElementById("b2").innerHTML="";
+			document.getElementById("b3").innerHTML="";
+
+			document.getElementById("c1").innerHTML="";
+			document.getElementById("c2").innerHTML="";
+			document.getElementById("c3").innerHTML="";
+
+			document.getElementById("d1").innerHTML="";
+			document.getElementById("d2").innerHTML="";
+			document.getElementById("d3").innerHTML="";
+
+			document.getElementById("e1").innerHTML="";
+			document.getElementById("e2").innerHTML="";
+			document.getElementById("e3").innerHTML="";
+
+			document.getElementById("f1").innerHTML="";
+			document.getElementById("f2").innerHTML="";
+			document.getElementById("f3").innerHTML="";
+
+			document.getElementById("g1").innerHTML="";
+			document.getElementById("g2").innerHTML="";
+			document.getElementById("g3").innerHTML="";
+
+			document.getElementById("h1").innerHTML="";
+			document.getElementById("h2").innerHTML="";
+			document.getElementById("h3").innerHTML="";
+
+			document.getElementById("i1").innerHTML="";
+			document.getElementById("i2").innerHTML="";
+			document.getElementById("i3").innerHTML="";
+
+			document.getElementById("j1").innerHTML="";
+			document.getElementById("j2").innerHTML="";
+			document.getElementById("j3").innerHTML="";
+
+			document.getElementById("ta").innerHTML="";
+			document.getElementById("ins").innerHTML="Investment Amount: "+"";
+			document.getElementById("int").innerHTML="Interest Amount: "+"";
+			document.getElementById("np").innerHTML="Net Pay: "+"";
+			document.getElementById("tp").innerHTML="Total Profit: "+"";
+		}
+	</script>
+</head>
+<body>
+	<center>
+		<form>
+		<h1 class="head"><font face="Informal Roman">Compound Interest</font></h1>
+		<br><br>
+		<font size="6px" color="mediumspringgreen" face="Freestyle Script">Enter Amount: </font>
+		<input type="text" name="" id="amt"><br><br>
+		<font size="6px" color="mediumspringgreen" face="Freestyle Script">Interest: </font>
+		<select id="so">
+			<option value="">--select Interest--</option>
+			<option value="0.05">5%</option>
+			<option value="0.10">10%</option>
+			<option value="0.15">15%</option>
+		</select><br><br>
+		<input type="button" name="" value="submit" onclick="fun()" class="but">
+		<input type="reset" name="" value="cancel" onclick="fun2()" class="but">
+		</form>
+		<br><br>
+
+		<table border="1" cellspacing="0" cellpadding="10">
+			<tr>
+				<td><center><font size="5px" color="indigo">S.No.</font></center></td>
+				<td><center><font size="5px" color="indigo">Amount</font></center></td>
+				<td><center><font size="5px" color="indigo">Interest</font></center></td>
+				<td><center><font size="5px" color="indigo">Total Amount</font></center></td>
+			</tr>
+			<tr>
+				<td><center>1.</center></td>
+				<td><center id="a1"></center></td>
+				<td><center id="a2"></center></td>
+				<td><center id="a3"></center></td>
+			</tr>
+			<tr>
+				<td><center>2.</center></td>
+				<td><center id="b1"></center></td>
+				<td><center id="b2"></center></td>
+				<td><center id="b3"></center></td>
+			</tr>
+			<tr>
+				<td><center>3.</center></td>
+				<td><center id="c1"></center></td>
+				<td><center id="c2"></center></td>
+				<td><center id="c3"></center></td>
+			</tr>
+			<tr>
+				<td><center>4.</center></td>
+				<td><center id="d1"></center></td>
+				<td><center id="d2"></center></td>
+				<td><center id="d3"></center></td>
+			</tr>
+			<tr>
+				<td><center>5.</center></td>
+				<td><center id="e1"></center></td>
+				<td><center id="e2"></center></td>
+				<td><center id="e3"></center></td>
+			</tr>
+			<tr>
+				<td><center>6.</center></td>
+				<td><center id="f1"></center></td>
+				<td><center id="f2"></center></td>
+				<td><center id="f3"></center></td>
+			</tr>
+			<tr>
+				<td><center>7.</center></td>
+				<td><center id="g1"></center></td>
+				<td><center id="g2"></center></td>
+				<td><center id="g3"></center></td>
+			</tr>
+			<tr>
+				<td><center>8.</center></td>
+				<td><center id="h1"></center></td>
+				<td><center id="h2"></center></td>
+				<td><center id="h3"></center></td>
+			</tr>
+			<tr>
+				<td><center>9.</center></td>
+				<td><center id="i1"></center></td>
+				<td><center id="i2"></center></td>
+				<td><center id="i3"></center></td>
+			</tr>
+			<tr>
+				<td><center>10.</center></td>
+				<td><center id="j1"></center></td>
+				<td><center id="j2"></center></td>
+				<td><center id="j3"></center></td>
+			</tr>
+			<tr>
+				<td colspan="3"><center><font color="indigo">Calculate Total Amount</font></center></td>
+				<td><center id="ta"></center></td>
+			</tr>
+		</table>
+
+		<h4 id="ins"></h4>
+		<h4 id="int"></h4>
+		<h4 id="np"></h4>
+		<h4 id="tp"></h4>
+		<br>
+
+		<h4><a href="index.html">Go to Home</a></h4>
+	</center>
+
+</body>
+</html>
